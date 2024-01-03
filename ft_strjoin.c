@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabejani <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: yabejani <yabejani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 16:38:09 by yabejani          #+#    #+#             */
-/*   Updated: 2023/11/13 16:56:12 by yabejani         ###   ########.fr       */
+/*   Updated: 2024/01/03 14:11:04 by yabejani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	while (s2[j])
 	{
-		str[i + j] = s2 [j];
+		str[i + j] = s2[j];
 		j++;
 	}
 	str[i + j] = '\0';

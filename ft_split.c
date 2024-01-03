@@ -6,7 +6,7 @@
 /*   By: yabejani <yabejani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 15:41:34 by yabejani          #+#    #+#             */
-/*   Updated: 2024/01/03 13:58:16 by yabejani         ###   ########.fr       */
+/*   Updated: 2024/01/03 14:10:35 by yabejani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ static void	mem_set(char **tab, char const *s, char c)
 		{
 			tab[i] = malloc(sizeof(char) * (count + 1));
 			if (!tab[i])
-				return ;
+				return (free_tab(tab));
 			fill_array(tab[i], (s + index), c);
 			i++;
 			index = index + count;
